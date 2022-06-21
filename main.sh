@@ -1,1 +1,1 @@
-yarn && npm start
+npm install && npm update && node .
