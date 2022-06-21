@@ -1,7 +1,6 @@
 # Repositori Qr
-
 Ini berfungsi untuk mendapatkan session
-- Dilarang Ambil tanpa izin itu namanya nyuri.
+
 - Masuk link di sampinng untuk run instan.
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@tioclkp02/ScanQr-botwea-10#.github/FUNDING.yml)
 - jika ingin import ke replit klik  link dibawah
