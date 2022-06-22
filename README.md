@@ -1,12 +1,12 @@
 
 
-<div align="center">
+<div align="alight">
 <img src="https://telegra.ph/file/19968eb11731f27620ffe.jpg" alt="BOTCAHX" width="300" />
 
 ## Cara mengambil session nya
-• Tampilan session ada di file seperti di gambar ini
-• Hanya bisa run di replit tidak bisa di terminal lain
-• Salin session tepat di file auth_info_multi.json
+# Tampilan session ada di file seperti di gambar ini
+# Hanya bisa run di replit tidak bisa di terminal lain
+#Salin session tepat di file auth_info_multi.json
 
 
 # Session-Md
