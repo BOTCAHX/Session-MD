@@ -8,6 +8,6 @@ Session untuk bot Md
 git clone https://github.com/BOTCAHX/Session-Md.git
 cd Session-Md
 npm i
-node .
+node index
 ```
 ---------
