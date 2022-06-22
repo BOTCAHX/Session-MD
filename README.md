@@ -10,7 +10,7 @@
 # Session-Md
 Session untuk bot Md 
 
-## INSTALL ON TERMUX
+## INSTALL ON Replit
 [ INSTALLING ]
 
 ```bash
