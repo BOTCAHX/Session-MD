@@ -1,10 +1,10 @@
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/~)
 
 
 <div align="alight">
 <img src="https://telegra.ph/file/19968eb11731f27620ffe.jpg" alt="BOTCAHX" width="300" />
 
 ## Cara Pemasangan
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/~)
 
 Cara ambil session nya,-
 
