@@ -13,7 +13,8 @@ Cara ambil session nya,-
 
 - Tampilan session ada di file seperti di gambar ini
 - Hanya bisa run di replit tidak bisa di terminal lain
-- Salin session tepat di file auth_info_multi.json
+- Salin session tepat di file auth_info_multi.json / jika mau file langsung ke session.data.json ganti terlebih dahulu file index
+- file index mentahan [mentahan index] 9https://github.com/BOTCAHX/Session-Md/new/main) salin dan ganti file index asli.
 
 
 # Session-Md
