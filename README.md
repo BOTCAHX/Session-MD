@@ -3,9 +3,12 @@
 <div align="alight">
 <img src="https://telegra.ph/file/19968eb11731f27620ffe.jpg" alt="BOTCAHX" width="300" />
 
-## Cara Pemasangan
+## AMBIL INSTAN
+- Klik tombol replit di bawah ini untuk instan tanpa coding  
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@tioclkp02/Session-Md-5#.replit)
 
+  
+## MANUAL INSTALL
 Cara ambil session nya,-
 
 - Tampilan session ada di file seperti di gambar ini
