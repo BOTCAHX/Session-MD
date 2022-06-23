@@ -1,4 +1,4 @@
-
+<div align="alight">
 <img src="https://telegra.ph/file/19968eb11731f27620ffe.jpg" alt="BOTCAHX" width="300" />
 
 ## AMBIL INSTAN
