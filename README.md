@@ -4,7 +4,7 @@
 <img src="https://telegra.ph/file/19968eb11731f27620ffe.jpg" alt="BOTCAHX" width="300" />
 
 ## Cara Pemasangan
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/~)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)]([https://replit.com/~](https://replit.com/@tioclkp02/Session-Md-5#.replit))
 
 Cara ambil session nya,-
 
