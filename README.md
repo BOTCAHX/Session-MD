@@ -47,8 +47,8 @@ qr()
 
 # Session-Md
 Session untuk bot Md 
-[DEM0](https://replit.com/@tioclkp02/Session-Md-5#.replit)
-
+[Simple Run repl](https://replit.com/@tioclkp02/Session-Md-5?lite=1&outputonly=1#.replit)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@tioclkp02/Session-Md-5?lite=1&outputonly=1#.replit)
   
 
 ## INSTALL ON Replit
