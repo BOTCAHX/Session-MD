@@ -15,7 +15,7 @@ Cara ambil session nya,-
 - Hanya bisa run di replit tidak bisa di terminal lain
 - Salin session tepat di file auth_info_multi.json / jika mau file langsung ke session.data.json ganti terlebih dahulu file index
 - file index mentahan [[KLIK MENTAHAN INDEX INI]](https://github.com/BOTCAHX/Session-Md/blob/main/index.js.bak) salin dan ganti file index asli.
-  
+```  
 const makeWASocket = require("@adiwajshing/baileys").default
 const qrcode = require("qrcode-terminal")
 const { delay, useSingleFileAuthState } = require("@adiwajshing/baileys")
@@ -45,6 +45,7 @@ function qr() {
   session.ev.on("messages.upsert", () => { })
 }
 qr()
+  ```
 
 # Session-Md
 Session untuk bot Md 
