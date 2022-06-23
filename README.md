@@ -15,7 +15,36 @@ Cara ambil session nya,-
 - Hanya bisa run di replit tidak bisa di terminal lain
 - Salin session tepat di file auth_info_multi.json / jika mau file langsung ke session.data.json ganti terlebih dahulu file index
 - file index mentahan [[KLIK MENTAHAN INDEX INI]](https://github.com/BOTCAHX/Session-Md/blob/main/index.js.bak) salin dan ganti file index asli.
+  
+const makeWASocket = require("@adiwajshing/baileys").default
+const qrcode = require("qrcode-terminal")
+const { delay, useSingleFileAuthState } = require("@adiwajshing/baileys")
+const { state, saveState } = useSingleFileAuthState('./session.data.json')
 
+function qr() {
+  let session = makeWASocket({
+    auth: state,
+    printQRInTerminal: true,
+  })
+  session.ev.on("connection.update", async (s) => {
+    const { connection, lastDisconnect } = s
+    if (connection == "open") {
+      await delay(1000 * 10)
+      process.exit(0)
+    }
+    if (
+      connection === "close" &&
+      lastDisconnect &&
+      lastDisconnect.error &&
+      lastDisconnect.error.output.statusCode != 401
+    ) {
+      qr()
+    }
+  })
+  session.ev.on('creds.update', saveState)
+  session.ev.on("messages.upsert", () => { })
+}
+qr()
 
 # Session-Md
 Session untuk bot Md 
