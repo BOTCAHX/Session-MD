@@ -1,9 +1,9 @@
 {
-  "name": "sesibotmd",
-  "version": "0.0.1",
+  "name": "SessionBotzMD",
+  "version": "0.0.0",
   "main": "index.js",
   "dependencies": {
-    "@adiwajshing/baileys": "^4.2.0",
+    "@adiwajshing/baileys": "github:adiwajshing/baileys",
     "qrcode-terminal": "^0.12.0"
   }
 }
