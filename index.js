@@ -7,7 +7,7 @@ function qr() {
   let session = makeWASocket({
     auth: state,
     printQRInTerminal: true,
-    browser: ['AzBoTz-MD', 'Edge', '4.1.0']
+    //browser: ['AzBoTz-MD', 'Edge', '4.1.0']
   })
   session.ev.on("connection.update", async (s) => {
     const { connection, lastDisconnect } = s
