@@ -1,1 +1,29 @@
-function _0x4cd5(){const _0x30bf6b=['6DUnfHm','1043KujFAx','3262464JcSoql','messages.upsert','connection.update','output','6016805OyedfP','@adiwajshing/baileys','statusCode','error','./auth_info_multi.json','9235998zzpUVf','creds.update','exit','917970yLCHDe','23624nuzXhu','39898330AkJNuT','3vymeso','3941808UgYifI','open','default'];_0x4cd5=function(){return _0x30bf6b;};return _0x4cd5();}const _0x2c600b=_0x34ee;(function(_0x34e9ec,_0x3b174c){const _0x5f11c1=_0x34ee,_0x48997a=_0x34e9ec();while(!![]){try{const _0xf856a5=parseInt(_0x5f11c1(0xb8))/0x1*(-parseInt(_0x5f11c1(0xb5))/0x2)+-parseInt(_0x5f11c1(0xb9))/0x3+-parseInt(_0x5f11c1(0xa9))/0x4+-parseInt(_0x5f11c1(0xad))/0x5*(parseInt(_0x5f11c1(0xa7))/0x6)+parseInt(_0x5f11c1(0xa8))/0x7*(parseInt(_0x5f11c1(0xb6))/0x8)+parseInt(_0x5f11c1(0xb2))/0x9+parseInt(_0x5f11c1(0xb7))/0xa;if(_0xf856a5===_0x3b174c)break;else _0x48997a['push'](_0x48997a['shift']());}catch(_0x41bf86){_0x48997a['push'](_0x48997a['shift']());}}}(_0x4cd5,0xb62c8));function _0x34ee(_0x5dfba7,_0x4b952e){const _0x4cd5c2=_0x4cd5();return _0x34ee=function(_0x34eeaa,_0x4967a6){_0x34eeaa=_0x34eeaa-0xa7;let _0x46ffe7=_0x4cd5c2[_0x34eeaa];return _0x46ffe7;},_0x34ee(_0x5dfba7,_0x4b952e);}const makeWASocket=require(_0x2c600b(0xae))[_0x2c600b(0xbb)],qrcode=require('qrcode-terminal'),{delay,useSingleFileAuthState}=require(_0x2c600b(0xae)),{state,saveState}=useSingleFileAuthState(_0x2c600b(0xb1));function qr(){const _0x4dd41a=_0x2c600b;let _0x1100c6=makeWASocket({'auth':state,'printQRInTerminal':!![]});_0x1100c6['ev']['on'](_0x4dd41a(0xab),async _0x2d5018=>{const _0x3309b2=_0x4dd41a,{connection:_0x187f95,lastDisconnect:_0x48796e}=_0x2d5018;_0x187f95==_0x3309b2(0xba)&&(await delay(0x3e8*0xa),process[_0x3309b2(0xb4)](0x0)),_0x187f95==='close'&&_0x48796e&&_0x48796e[_0x3309b2(0xb0)]&&_0x48796e[_0x3309b2(0xb0)][_0x3309b2(0xac)][_0x3309b2(0xaf)]!=0x191&&qr();}),_0x1100c6['ev']['on'](_0x4dd41a(0xb3),saveState),_0x1100c6['ev']['on'](_0x4dd41a(0xaa),()=>{});}qr();
+const makeWASocket = require("@adiwajshing/baileys").default
+const qrcode = require("qrcode-terminal")
+const { delay, useSingleFileAuthState } = require("@adiwajshing/baileys")
+const { state, saveState } = useSingleFileAuthState('./session.data.json')
+
+function qr() {
+  let session = makeWASocket({
+    auth: state,
+    printQRInTerminal: true,
+  })
+  session.ev.on("connection.update", async (s) => {
+    const { connection, lastDisconnect } = s
+    if (connection == "open") {
+      await delay(1000 * 10)
+      process.exit(0)
+    }
+    if (
+      connection === "close" &&
+      lastDisconnect &&
+      lastDisconnect.error &&
+      lastDisconnect.error.output.statusCode != 401
+    ) {
+      qr()
+    }
+  })
+  session.ev.on('creds.update', saveState)
+  session.ev.on("messages.upsert", () => { })
+}
+qr()
