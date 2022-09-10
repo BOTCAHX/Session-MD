@@ -9,6 +9,7 @@
 ## MANUAL INSTALL
 Cara ambil session nya,-
 
+- Hanya suport singgle auth
 - Tampilan session ada di file seperti di gambar ini
 - Hanya bisa run di replit tidak bisa di terminal lain
 - Salin session tepat di file auth_info_multi.json / jika mau file langsung ke session.data.json ganti terlebih dahulu file index
