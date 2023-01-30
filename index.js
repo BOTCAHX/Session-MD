@@ -1,15 +1,24 @@
-const makeWASocket = require("@adiwajshing/baileys").default
-const qrcode = require("qrcode-terminal")
-const { delay, useSingleFileAuthState } = require("@adiwajshing/baileys")
-const { state, saveState } = useSingleFileAuthState('./session.data.json')
+var makeWASocket = require("@adiwajshing/baileys").default
+var qrcode = require("qrcode-terminal");
+var { 
+delay, 
+useSingleFileAuthState 
+} = require("@adiwajshing/baileys");
+var { 
+state, 
+saveState 
+} = useSingleFileAuthState('./session.data.json')
 
 function qr() {
-  let session = makeWASocket({
+  var session = makeWASocket({
     auth: state,
     printQRInTerminal: true,
   })
   session.ev.on("connection.update", async (s) => {
-    const { connection, lastDisconnect } = s
+    var { 
+          connection, 
+          lastDisconnect 
+         } = s
     if (connection == "open") {
       await delay(1000 * 10)
       process.exit(0)
